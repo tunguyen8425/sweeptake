@@ -12,6 +12,7 @@
 .mobile-header, .mobile-logo, .nav-mobile-btn{
     display: none;
 }
+
 .header{
     position: absolute;
     top: 0;
@@ -20,6 +21,10 @@
     padding: 40px;
     z-index: 99;
     background-color: #00000093;
+}
+.about-header{
+    padding: 16px ;
+    top: 100px;
 }
 .header .container{
     display: flex;
@@ -116,6 +121,9 @@ iframe{
     padding: 20px;
     text-align: center;
 }
+.game-step .row{
+    justify-content: center;
+}
 .heading{
     font-size: 33px;
     text-align: center;
@@ -153,6 +161,7 @@ iframe{
     align-items: center;
     gap: 15px;
 }
+
 .button-step-block a{
     display: flex;
     justify-content: center;
@@ -534,8 +543,14 @@ ul{
     display: none;
 }
 @media screen and (max-width: 767.98px) {
+    .head-about{
+        display: none;
+    }
     .about-item{
         flex-direction: column;
+    }
+    .about-header{
+        top: 0;
     }
     .about-item img{
         margin: 0 auto;
@@ -556,6 +571,8 @@ ul{
         
     }
     .mobile-header{
+        z-index: 99;
+
         background-color: #000;
         padding: 20px;
         display: flex;
@@ -574,6 +591,8 @@ ul{
         right: 15px;
     }
     .header{
+        z-index: 99;
+
         height: 100%;
         background-color: #000;
         width: 100%;
@@ -702,6 +721,74 @@ ul{
     }
     main{
         padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .wrapper{
+        position: relative;
+    }
+    .mobile-header, .mobile-logo, .nav-mobile-btn{
+        display: block;
+        
+    }
+    .mobile-header{
+        background-color: #000;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        z-index: 99;
+    }
+    .mobile-logo{
+        color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    }
+    .close-btn{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+    .header{
+        z-index: 99;
+
+        height: 100%;
+        background-color: #000;
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        left: -1000px;
+        transition: 0.5s ease;
+        height: 82px;
+    }
+    .header.active{
+        left: 0;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-btn{
+        flex-direction: column;
+    }
+    .logo{
+        display: none;
+    }
+    .header.active .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .container{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .wrapper{
+        position: relative;
     }
 }
 
@@ -960,6 +1047,17 @@ textarea{
     background: #000;
     background: linear-gradient(0deg,rgba(0,0,0,1) 20%,rgba(255,255,255,1) 100%,rgba(0,212,255,1) 100%);
 }
+.head-about{
+    background-image: url(./img/bg_sweep.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+.sc-2{
+    transform: scale(2);
+}
+
 @media screen and (min-width: 1024px) {
     
     .about{
