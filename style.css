@@ -397,6 +397,8 @@ ul{
     margin-bottom: 25px;
 }
 .footer p{
+    height: 50px;
+    background-color:#090a09;
     font-size: 14px;
     font-weight: 400;
     color: #fff;
