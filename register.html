@@ -13,7 +13,7 @@
 <body>
     <div class="register">
         <p class="register-logo">
-            SweepStakes Wallet
+            Play With Win Win & LuckyPanda
         </p>
         <div class="form">
           
@@ -33,19 +33,19 @@
                 </div>
                 <div class="input-wrap">
                     <p>Email address</p>
-                    <input type="text" placeholder="Test@gmail.com" id="email">
+                    <input type="text" placeholder="example@gmail.com" id="email">
                 </div>
                 <div class="input-wrap">
                     <p>Phone no.</p>
-                    <input type="number" placeholder="12345678" id="phone-number">
+                    <input type="number" placeholder="Your Phone Number" id="phone-number">
                 </div>
                 <div class="input-wrap">
                     <p>Password</p>
-                    <input type="password" placeholder="******" id="pass">
+                    <input type="password" placeholder="Your Password" id="pass">
                 </div>
                 <div class="input-wrap">
                     <p>Link Facebook</p>
-                    <input type="text" placeholder="https://www.facebook.com/ntv0910" id="fb">
+                    <input type="text" placeholder="Your Facebook Link" id="fb">
                 </div>
                 <div class="input-wrap">
                     <p>Payment Tag</p>
@@ -53,6 +53,10 @@
                         <option value="Cashapp">Cashapp</option>
                         <option value="Zelle">Zelle</option>
                         <option value="Chime">Chime</option>
+                        <option value="Venmo">Venmo</option>
+                        <option value="Apple Pay">Apple Pay</option>
+                        <option value="Google Pay">Google Pay</option>
+
                     </select>
                 </div>
                 <div class="input-wrap">
@@ -151,9 +155,9 @@
 
             if(ValidateEmail(email.value) && checkCheckbox(checkbox)){
                 if(email.value == '' || phoneNumber.value == '' || firstName.value == '' || lastName.value == '' || pass.value == '' || fb.value == '' || gameShow.value == '' || paymentTag.value == ''){
-                    alert('Không được bỏ trống các trường')
+                    alert('Please input all information')
                 } else{
-                    alert('Đăng kí thành công')
+                    alert('Create Successfully')
                     let emailValue = email.value.slice(0, email.value.indexOf('@'))
                     try {
                         
